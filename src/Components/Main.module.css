@@ -1,0 +1,19 @@
+#search {
+  font-size: 20px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  column-gap: 50px;
+  row-gap: 100px;
+}
+
+#card {
+  width: 20%;
+  height: 100%;
+  border-radius: 0 0 20px 20px;
+}
