@@ -42,9 +42,9 @@ const Main = () => {
               <Card.Img variant="top" src={`player-images/${item.Id}.jpg`} />
               <Card.Body style={{ textAlign: "left" }}>
                 <Card.Title>Full Name: {item.PFName}</Card.Title>
-                <h3>Skill: {item.SkillDesc}</h3>
-                <h3>Players Value: {item.Value}</h3>
-                <h3>
+                <Card.Text>Skill: {item.SkillDesc}</Card.Text>
+                <Card.Text>Players Value: {item.Value}</Card.Text>
+                <Card.Text>
                   Up-Coming Match List:{" "}
                   {item.UpComingMatchesList.map((match) => {
                     return (
@@ -52,13 +52,13 @@ const Main = () => {
                         {match.CCode === "" || match.VsCode === ""
                           ? "No Matches"
                           : `${match.CCode} v/s ${match.VsCCode}`}
-                        <h3>
+                        <Card.Text>
                           Time: {match.MDate === "" ? "NA" : `${match.MDate}`}
-                        </h3>
+                        </Card.Text>
                       </>
                     );
                   })}
-                </h3>
+                </Card.Text>
               </Card.Body>
             </Card>
           ))}
