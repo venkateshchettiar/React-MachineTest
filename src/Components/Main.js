@@ -64,7 +64,7 @@ const Main = () => {
           type="text"
           placeholder="Search..."
           onChange={(e) => setSearch(e.target.value)}
-          className=" form-control w-25 mt-5 mb-5"
+          className=" form-control"
           id={styles.search}
         />
       </div>

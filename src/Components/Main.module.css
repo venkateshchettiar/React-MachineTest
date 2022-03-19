@@ -2,6 +2,8 @@
   font-size: 20px;
   padding: 5px 10px;
   outline: none;
+  width: 50%;
+  margin: 50px 0;
 }
 
 #container {
@@ -10,6 +12,8 @@
   justify-content: space-around;
   column-gap: 50px;
   row-gap: 100px;
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit); */
 }
 
 #card {
@@ -21,4 +25,23 @@
 
 #card:hover {
   transform: translate(0, -10px);
+}
+
+@media (max-width: 800px) {
+  #container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 50px;
+    row-gap: 100px;
+  }
+
+  #card {
+    width: 80%;
+  }
+
+  #search {
+    width: 60%;
+  }
 }
